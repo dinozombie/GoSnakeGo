@@ -1,6 +1,6 @@
 Overview
 --------
-_GoSnakeGo_ is a game of snake written in Go made with the [goncurses](https://github.com/rthornton128/goncurses) library.
+_GoSnakeGo_ is a game of snake for the terminal written in Go made with the [goncurses](https://github.com/rthornton128/goncurses) library.
 
 # Requires
 
