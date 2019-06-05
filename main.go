@@ -217,6 +217,13 @@ func main() {
 
 	stdscr.Keypad(true)
 
+	if err := goncurses.StartColor(); err != nil {
+		log.Fatal(err)
+	}
+
+	goncurses.InitPair(1, goncurses.C_RED, goncurses.C_BLACK)
+	stdscr.ColorOn(1)
+
 	maxY, maxX := stdscr.MaxYX()
 	snake := newSnake(maxX/2, maxY/2)
 	food := newFood(snake, maxX, maxY)
